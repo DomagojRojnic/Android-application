@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Izostanci</string>
+    <string name="btnAddCourse">Dodaj novi kolegij</string>
+    <string name="btnConcludeSemester">Zaključi semestar</string>
+    <string name="imageUnavailable">unavailable</string>
+    <string name="slash">/</string>
+    <string name="overallAbsenceText">Ukupno izostanih sati:</string>
+    <string name="CoffeeConsumedText">Popijenih kava:</string>
+    <string name="SpentOnCoffeeText">Potrošeno na kave:</string>
+    <string name="course_name">Ime kolegija:</string>
+    <string name="total_hours">Ukupno sati:</string>
+    <string name="minimum_absence">Minimum dolaznosti (%):</string>
+    <string name="missing_hours">Koliko sati izostaješ?</string>
+    <string name="coffee_question">Ideš na kavu?</string>
+    <string name="coffee_price">Cijena kave:</string>
+    <string name="coffee_amount">Količina:</string>
+</resources>

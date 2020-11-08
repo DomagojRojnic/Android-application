@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackgroundLightGray">
+
+    <TextView
+        android:id="@+id/tvNewCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/course_name"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/etNewCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/tvNewCourseName"
+        android:inputType="text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvNewCourseTotalHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/total_hours"
+        android:textSize="18sp"
+        android:layout_below="@+id/etNewCourseName"/>
+    <EditText
+        android:id="@+id/etNewCourseTotalHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/tvNewCourseTotalHours"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/tvNewCourseMinimumAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/minimum_absence"
+        android:textSize="18sp"
+        android:layout_below="@+id/etNewCourseTotalHours"/>
+    <EditText
+        android:id="@+id/etNewCourseMinimumAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/tvNewCourseMinimumAttendance"
+        android:inputType="number"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCancelEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/ic_cancel"
+            android:backgroundTint="@color/white"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabConfirmEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/ic_check"
+            android:backgroundTint="@color/colorPrimary"/>
+    </LinearLayout>
+
+</RelativeLayout>

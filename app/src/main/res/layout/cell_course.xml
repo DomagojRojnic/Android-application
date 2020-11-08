@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@color/card">
+
+    <ImageView
+        android:id="@+id/ivCourseIcon"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/book_icon"
+        android:contentDescription="@string/imageUnavailable"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvCourseName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="3"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="viewStart"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvAbsenceUpToNow"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="viewEnd"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvSlash"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/slash"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvTotalAbsenceAllowed"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="viewStart"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundLightGray">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/tvHoursMissing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="@string/missing_hours" />
+
+        <EditText
+            android:id="@+id/etHoursMissingNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/LinearLayoutFour">
+
+        <TextView
+            android:id="@+id/tvCoffeeQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="@string/coffee_question" />
+
+        <Spinner
+            android:id="@+id/spCoffeeQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutSix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/LinearLayoutFive">
+
+        <TextView
+            android:id="@+id/tvCoffeePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="@string/coffee_price"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/etCoffeePriceNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutSeven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/LinearLayoutSix">
+
+        <TextView
+            android:id="@+id/tvCoffeeAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="@string/coffee_amount"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/etCoffeeAmountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCancelEntryMiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/ic_cancel"
+            android:backgroundTint="@color/white"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabConfirmEntryMiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/ic_check"
+            android:backgroundTint="@color/colorPrimary"/>
+    </LinearLayout>
+
+</RelativeLayout>
